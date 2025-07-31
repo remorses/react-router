@@ -16,7 +16,7 @@ The React Router Vite plugin adds framework features to React Router. This guide
 The Vite plugin adds:
 
 - Route loaders, actions, and automatic data revalidation
-- Typesafe Routes Modules
+- Type-safe Routes Modules
 - Automatic route code-splitting
 - Automatic scroll restoration across navigations
 - Optional Static pre-rendering
@@ -170,13 +170,13 @@ import "./index.css";
 import App from "./App";
 
 ReactDOM.createRoot(
-  document.getElementById("root")!
+  document.getElementById("root")!,
 ).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 ```
 
@@ -192,7 +192,7 @@ ReactDOM.hydrateRoot(
   document,
   <React.StrictMode>
     <HydratedRouter />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 ```
 
